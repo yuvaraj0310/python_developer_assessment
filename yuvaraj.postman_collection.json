@@ -1,0 +1,75 @@
+{
+	"info": {
+		"_postman_id": "fe36ffeb-014e-469c-949a-65074d17b07b",
+		"name": "yuvaraj",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23014170"
+	},
+	"item": [
+		{
+			"name": "incoming_data",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"yuvaraj\",\r\n    \"email\": \"sdgfdfgdf@gmail.com\",\r\n    \"contact\": \"3454535345\",\r\n    \"password\": \"123456\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/server/incoming_data",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"server",
+						"incoming_data"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "destinations",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"message\" : \"login success\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/server/destinations/66537c7acd1ffafb1d48bea3",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"server",
+						"destinations",
+						"66537c7acd1ffafb1d48bea3"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
